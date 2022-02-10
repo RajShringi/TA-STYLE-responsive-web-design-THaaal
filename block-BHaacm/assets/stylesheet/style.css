@@ -194,7 +194,7 @@ p {
 .header {
   background: var(--primary);
   text-align: center;
-  padding: 1.5em;
+  padding: 1.5em 0;
 }
 .nav-menu {
   display: flex;
@@ -230,4 +230,34 @@ p {
 }
 .blog {
   margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  padding: 1.5em 0;
+}
+.altcampus {
+  text-align: center;
+  color: var(--icon-bg);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+.social-link {
+  color: var(--primary);
+  width: 30px;
+  height: 30px;
+  background-color: var(--icon-bg);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 1em;
+}
+.social-link:hover {
+  background-color: var(--secondary);
 }
