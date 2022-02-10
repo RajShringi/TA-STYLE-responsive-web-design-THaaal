@@ -153,7 +153,25 @@ img {
   max-width: 100%;
   height: auto;
 }
+h2,
+h3 {
+  font-family: serif;
+}
+p {
+  color: #9c9da4;
+}
 
+.btn {
+  display: inline-block;
+  border-radius: 6px;
+  color: #fff;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background: var(--secondary);
+}
+.btn:hover {
+  background: rgb(47, 156, 89);
+}
 /* container */
 .container {
   max-width: 1200px;
@@ -185,4 +203,14 @@ img {
 .nav-menu a:hover,
 .nav-menu a:focus {
   color: var(--secondary);
+}
+
+/* Hero */
+.hero {
+  background: var(--bg-color);
+  padding: 2em 0;
+}
+h2 {
+  font-size: 2rem;
+  color: #333;
 }
