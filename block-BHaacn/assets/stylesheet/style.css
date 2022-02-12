@@ -151,7 +151,7 @@ body {
   line-height: 1.5;
 }
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 a {
@@ -162,7 +162,10 @@ h2 {
   font-size: 3.5rem;
   font-weight: 700;
 }
-
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
 .btn {
   background: var(--secondary);
   color: #fff;
@@ -262,6 +265,7 @@ h2 {
 .hero-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   padding: 2em 2em;
 }
@@ -290,7 +294,7 @@ h2 {
   align-items: center;
   flex-direction: column;
   padding: 2em 2em;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .about-heading {
   text-transform: uppercase;
@@ -311,12 +315,53 @@ h2 {
   flex: 0 1 100%;
   margin-bottom: 1em;
 }
+/* Join */
+.join {
+  background: var(--bg-color);
+}
+.join-info {
+  padding: 2em 2em;
+}
+.join-heading {
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 1em;
+}
+.join-reasons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.join-reason {
+  border: 2px dashed var(--secondary);
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.join-reason-number {
+  margin: 0 1em;
+  background-color: var(--bg-color);
+  color: var(--secondary);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.3em 0.5em;
+}
+.join-reason-heading {
+  margin-bottom: 0.5em;
+}
+.join-reason-text {
+  font-size: 1.09rem;
+  color: var(--text-light);
+}
+
 @media screen and (min-width: 768px) {
   html {
     font-size: 16px;
   }
   .container {
     padding: 0;
+  }
+  .nav-container {
+    padding: 0 1em;
   }
   .header {
     height: auto;
@@ -352,19 +397,19 @@ h2 {
     flex: 0 1 48%;
   }
   .hero-img-container {
-    flex: 0 1 30%;
+    flex: 0 1 35%;
     order: 0;
     margin: 0;
   }
   .hero-info {
-    padding: 5em 0;
+    padding: 5em 1em;
   }
 
   /* About */
   .about-info {
     flex-direction: row;
     justify-content: space-between;
-    padding: 5em 0;
+    padding: 5em 1em;
   }
   .about-article {
     flex: 0 1 45%;
@@ -372,5 +417,18 @@ h2 {
   .about-img {
     flex: 0 1 45%;
     margin: 0;
+  }
+
+  /* Join */
+  .join-reasons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .join-reason {
+    flex: 0 1 30%;
+    margin-bottom: 0;
+  }
+  .join-info {
+    padding: 5em 1em;
   }
 }
