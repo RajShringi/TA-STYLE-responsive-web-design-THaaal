@@ -421,6 +421,32 @@ h3 {
   background: var(--secondary);
   color: #fff;
 }
+
+.video-info {
+  padding: 2em 2em;
+  position: relative;
+}
+.video-img-container img {
+  border-radius: 20px;
+}
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.play i {
+  color: var(--secondary);
+  font-size: 2rem;
+}
 @media screen and (min-width: 768px) {
   html {
     font-size: 16px;
@@ -564,5 +590,13 @@ h3 {
   .topic-info {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .video-info {
+    padding: 5em 1em;
+  }
+  .play {
+    width: 100px;
+    height: 100px;
   }
 }
