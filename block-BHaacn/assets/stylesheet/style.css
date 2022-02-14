@@ -388,7 +388,9 @@ h3 {
   color: var(--text-light);
   margin-bottom: 1em;
 }
-
+.button-container {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   html {
     font-size: 16px;
