@@ -447,6 +447,39 @@ h3 {
   color: var(--secondary);
   font-size: 2rem;
 }
+
+.news {
+  background: var(--bg-color);
+}
+.news-info {
+  padding: 2em 2em;
+  display: flex;
+  flex-direction: column;
+}
+.news-info article {
+  margin-bottom: 2em;
+}
+.news-info article img {
+  margin-bottom: 1em;
+}
+.link {
+  margin: 1em 0;
+  color: var(--text-light);
+  text-decoration: underline;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+.news-info p {
+  color: var(--text-light);
+  font-size: 1.2rem;
+}
+.active-link {
+  color: var(--secondary);
+}
+
 @media screen and (min-width: 768px) {
   html {
     font-size: 16px;
@@ -598,5 +631,14 @@ h3 {
   .play {
     width: 100px;
     height: 100px;
+  }
+
+  .news-info {
+    padding: 5em 1em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .news-info article {
+    width: 30%;
   }
 }
