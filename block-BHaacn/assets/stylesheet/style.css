@@ -391,6 +391,36 @@ h3 {
 .button-container {
   text-align: center;
 }
+/* Topics */
+.topics {
+  background: var(--bg-color);
+  padding: 2em 2em;
+}
+.topic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topic-img {
+  margin-bottom: 2em;
+}
+.topic {
+  margin-bottom: 2em;
+  text-align: center;
+  padding: 2em 3em;
+  border-radius: 6px;
+}
+.topic p {
+  font-size: 1.3rem;
+}
+.topic-num {
+  font-weight: 700;
+  font-weight: 1.3rem;
+}
+.topic-active {
+  background: var(--secondary);
+  color: #fff;
+}
 @media screen and (min-width: 768px) {
   html {
     font-size: 16px;
@@ -529,5 +559,10 @@ h3 {
     top: 0;
     bottom: -30%;
     z-index: -2;
+  }
+
+  .topic-info {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
